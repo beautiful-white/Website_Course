@@ -20,6 +20,9 @@ $sql = "CREATE TABLE IF NOT EXISTS users (
 $result = mysqli_query($conn, $sql);
 if (!$result) die("Ошибка создания таблицы users: " . mysqli_error($conn));
 
+$result = mysqli_query($conn, "ALTER TABLE users ADD COLUMN IF NOT EXISTS avatar VARCHAR(255) DEFAULT NULL");
+if (!$result) die("Ошибка добавления колонки avatar: " . mysqli_error($conn));
+
 $sql = "CREATE TABLE IF NOT EXISTS posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT,
