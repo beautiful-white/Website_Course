@@ -58,7 +58,7 @@ $myInitials = getInitials($_SESSION['user_name']);
   <nav class="navbar navbar-light bg-white border-bottom">
     <div class="container">
       <a href="index.php" class="navbar-brand fw-semibold">Блогли</a>
-      <a href="profile.php" class="btn btn-outline-secondary btn-sm"><?= $myInitials ?> (<?= $_SESSION['user_name'] ?>)</a>
+      <a href="profile.php" class="btn btn-outline-secondary btn-sm">Профиль (<?= $myInitials ?>)</a>
     </div>
   </nav>
 

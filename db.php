@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conn = mysqli_connect("127.0.0.1", "root", "mypass");
+$conn = mysqli_connect("127.0.0.1", "root", "BxPMZbhvJmRZT6t57UWOh6R6o9aO6p4C");
 if (!$conn) die("Ошибка подключения к базе данных: " . mysqli_connect_error());
 
 $result = mysqli_query($conn, "CREATE DATABASE IF NOT EXISTS blog");
@@ -28,4 +28,3 @@ $sql = "CREATE TABLE IF NOT EXISTS posts (
 )";
 $result = mysqli_query($conn, $sql);
 if (!$result) die("Ошибка создания таблицы posts: " . mysqli_error($conn));
-?>
