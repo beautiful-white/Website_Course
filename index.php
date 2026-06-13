@@ -1,3 +1,4 @@
+<?php require_once 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -13,8 +14,8 @@
     <div class="container">
       <span class="navbar-brand fw-semibold">Блогли</span>
       <div>
-        <a href="login.html" class="btn btn-outline-secondary btn-sm me-2">Войти</a>
-        <a href="register.html" class="btn btn-dark btn-sm">Регистрация</a>
+        <a href="login.php" class="btn btn-outline-secondary btn-sm me-2">Войти</a>
+        <a href="register.php" class="btn btn-dark btn-sm">Регистрация</a>
       </div>
     </div>
   </nav>
@@ -23,8 +24,8 @@
     <p class="text-muted small text-uppercase mb-2">Добро пожаловать</p>
     <h1 class="fw-semibold mb-3">Делитесь мыслями.<br>Находите своих.</h1>
     <p class="text-muted mb-4">Простое место для постов, общения и идей.</p>
-    <a href="register.html" class="btn btn-dark me-2">Начать →</a>
-    <a href="posts.html" class="btn btn-outline-secondary">Читать посты</a>
+    <a href="register.php" class="btn btn-dark me-2">Начать →</a>
+    <a href="posts.php" class="btn btn-outline-secondary">Читать посты</a>
   </div>
 
   <div class="container pb-5">
