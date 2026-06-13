@@ -83,9 +83,6 @@ $postsCount = count($userPosts);
           </div>
         </div>
         <h5 class="fw-semibold mb-0"><?= $user_name ?></h5>
-        <p class="text-muted small mb-3">@soloviev · Москва</p>
-        <p class="mb-3">Интересуюсь технологиями, пишу о том, что важно.</p>
-
         <div class="d-flex gap-4 mb-3">
           <div><strong><?= $postsCount ?></strong> <span class="text-muted small">поста</span></div>
           <div><strong>318</strong> <span class="text-muted small">подписчиков</span></div>
